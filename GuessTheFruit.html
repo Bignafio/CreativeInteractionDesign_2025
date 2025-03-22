@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Guess The Fruit</title>
+<style>
+body {
+  font-family: Times New Roman;
+  text-align:center;
+  margin-top:50px;
+}
+.puzzle{
+font-size:2em;
+letter-spacing:10px;
+}
+.message{
+  color:green;
+  font-weight: bold;
+}
+.error{
+  color: red;
+}
+</style>
+</head>
+<body>
+  <h1>Guess The Fruit</h1>
+  <div class="puzzle" id="puzzle">_ _ _ _ _</div>
+  <p>Guess the hidden word by entering one letter at a time.</p>
+  <input type="text" id="guess" maxlength="1" placeholder="Enter a letter">
+  <button oneclick="checkLetter()">Submit</button>
+    <p class="message" id="message"></p>
+    <p class="error" id="error"></p>
+
+<script scr="script5.js"></script>
+</body>
+</html>

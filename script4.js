@@ -14,7 +14,7 @@ function checkLetter() {
     const puzzle = document.getElementById('puzzle');
 
     const letter = guessInput.value.toLowerCase();
-    guessInput.value = '';
+    guessInput.value = ''; 
 
     if (!letter.match(/[a-z]/i)) {
         error.textContent = "Please enter a valid letter.";

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Puzzle Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .puzzle {
+            font-size: 2em;
+            letter-spacing: 10px;
+        }
+        .message {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fruit Puzzle Game</h1>
+    <div class="puzzle" id="puzzle">_ _ _ _ _</div>
+    <p>Guess the hidden fruit by entering one letter at a time.</p>
+    <input type="text" id="guess" maxlength="1" placeholder="Enter a letter">
+    <button onclick="checkLetter()">Submit</button>
+    <button onclick="resetGame()">Reset Game</button>
+    <p class="message" id="message"></p>
+    <p class="error" id="error"></p>
+
+    <script src="script2.js"></script>
+</body>
+</html>
